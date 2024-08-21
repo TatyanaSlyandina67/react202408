@@ -12,8 +12,8 @@ root.render(
      <h2> {restaurant.name} </h2>
     <h3>Меню</h3>
     <ul>
-      {restaurant.menu.map((ima)=>(
-        <li>{ima.name}</li>
+      {restaurant.menu.map((menuItem)=>(
+        <li>{menuItem.name}</li>
       ))}
     </ul>
     <h3>Отзывы</h3>
