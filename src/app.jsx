@@ -1,11 +1,11 @@
-import {RestaurantsPage} from "./components/restaurants-page/restaurants-page.jsx";
-import {restaurants} from "./mock";
-
+import { RestaurantsPage } from "./components/restaurants-page/restaurants-page.jsx";
+import { restaurants } from "./mock";
+import { Layout } from "./components/layout/layout";
 
 export const App = () => {
-    return (
-    <div>
-       < RestaurantsPage title={'Список Ресторанов'}/>
-    </div>
-    )
+  return (
+    <Layout>
+      <RestaurantsPage title={"Список Ресторанов"} />
+    </Layout>
+  );
 };

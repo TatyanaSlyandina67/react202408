@@ -1,11 +1,10 @@
-import { Review } from "../review/review";
 
 export const Reviews = ({ reviews }) => {
   return (
-    <ul>
+    <div>
       {reviews?.map((review) => (
-        <Review user={review.user} text={review.text} />
+        <li key={review.id}>{review.user} {review.text} </li>
       ))}
-    </ul>
+    </div>
   );
 };
