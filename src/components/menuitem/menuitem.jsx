@@ -1,7 +1,10 @@
-import { Counter } from "../counter/counter";
+import { MenuItemCounter } from "../menuitem-counter/menuitem-counter";
 
 export const MenuItem = ({name, price }) => {
     return (
-        <li >{name} / {price} $ <Counter /></li>
-    );
-  };
+        <>
+        {name} / {price} $ 
+        <MenuItemCounter />
+        </>
+    )
+  }
