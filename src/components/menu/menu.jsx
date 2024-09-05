@@ -4,7 +4,7 @@ export const Menu = ({ menu }) => {
   return (
     <ul>
       {menu?.map((menuItem) => (
-        <li > 
+        <li key={menuItem.id}> 
           <MenuItem name={menuItem.name} price={menuItem.price} /> 
         </li>
       ))}
