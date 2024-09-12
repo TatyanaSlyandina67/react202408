@@ -1,10 +1,10 @@
-
 export const Reviews = ({ reviews }) => {
   return (
-    <div>
-      {reviews?.map((review) => (
-        <li key={review.id}>{review.user} {review.text} </li>
+    <ul>
+      {reviews?.map((reviewItem) => (
+        <li key={reviewItem.id}> {reviewItem.text} </li>
       ))}
-    </div>
-  );
-};
+    </ul>
+  )
+}
+
